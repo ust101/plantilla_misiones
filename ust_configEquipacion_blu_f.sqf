@@ -296,7 +296,6 @@ switch (_tipoUnidad) do
 
         // Objetos en el uniforme.
         (uniformContainer _unidad) addItemCargoGlobal [_armaSilenciador,1];
-        (uniformContainer _unidad) addMagazineCargoGlobal [_municion,1];
 
         // Objetos en el chaleco.
         if (ust_mod_ace3) then {
@@ -306,7 +305,7 @@ switch (_tipoUnidad) do
                 (vestContainer _unidad) addItemCargoGlobal [_microDAGR,1];
             };
         };
-        (vestContainer _unidad) addMagazineCargoGlobal [_municion,8];
+        (vestContainer _unidad) addMagazineCargoGlobal [_municion,5];
         (vestContainer _unidad) addMagazineCargoGlobal [_municionT,1];
         (vestContainer _unidad) addMagazineCargoGlobal [_municion320,2];
         (vestContainer _unidad) addMagazineCargoGlobal [_granadaRGN,1];
@@ -789,13 +788,13 @@ switch (_tipoUnidad) do
         _unidad addBackpack _mochila;
 
         // Objetos en el uniforme.
-        (uniformContainer _unidad) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",2];
+        //(uniformContainer _unidad) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",2];
 
         // Objetos en el chaleco.
         if (ust_mod_ace3) then {
             (vestContainer _unidad) addItemCargoGlobal [_vendas,2];
         };
-        (vestContainer _unidad) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",3];
+        (vestContainer _unidad) addMagazineCargoGlobal [_municionAR,3];
         (vestContainer _unidad) addMagazineCargoGlobal [_granadaRGO,3];
 
         // Objetos en la mochila.
@@ -809,7 +808,7 @@ switch (_tipoUnidad) do
             };
         };
         (unitBackpack _unidad) addItemCargoGlobal [_visioNocturna,1];
-        (unitBackpack _unidad) addMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",1];
+        (unitBackpack _unidad) addMagazineCargoGlobal [_municionAR,1];
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGN,2];
         (unitBackpack _unidad) addMagazineCargoGlobal ["rhs_mag_an_m8hc",1];
 
@@ -826,7 +825,7 @@ switch (_tipoUnidad) do
         _unidad addBackpack _mochila;
 
         // Objetos en el uniforme.
-        (uniformContainer _unidad) addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag",1];
+        (uniformContainer _unidad) addMagazineCargoGlobal [_municionDM,1];
 
         // Objetos en el chaleco.
         if (ust_mod_ace3) then {
@@ -837,7 +836,7 @@ switch (_tipoUnidad) do
             };
         };
         (vestContainer _unidad) addMagazineCargoGlobal [_granadaRGO,3];
-        (vestContainer _unidad) addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag",6];
+        (vestContainer _unidad) addMagazineCargoGlobal [_municionDM,6];
 
         // Objetos en la mochila.
         if (ust_mod_ace3) then {
@@ -852,7 +851,7 @@ switch (_tipoUnidad) do
         (unitBackpack _unidad) addItemCargoGlobal [_visioNocturna,1];
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGN,2];
         (unitBackpack _unidad) addMagazineCargoGlobal ["rhs_mag_an_m8hc",1];
-        (unitBackpack _unidad) addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag",5];
+        (unitBackpack _unidad) addMagazineCargoGlobal [_municionDM,5];
 
         // Arma principal.
         // Missing muzzle attachment
@@ -870,14 +869,14 @@ switch (_tipoUnidad) do
         _unidad addBackpack _mochila;
 
         // Objetos en el uniforme.
-        (uniformContainer _unidad) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",1];
+        //(uniformContainer _unidad) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",1];
 
         // Objetos en el chaleco.
         if (ust_mod_ace3) then {
             (vestContainer _unidad) addItemCargoGlobal [_vendas,2];
         };
         (vestContainer _unidad) addMagazineCargoGlobal [_granadaRGO,3];
-        (vestContainer _unidad) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",2];
+        (vestContainer _unidad) addMagazineCargoGlobal [_municionMG,2];
 
         // Objetos en la mochila.
         if (ust_mod_ace3) then {
@@ -892,7 +891,7 @@ switch (_tipoUnidad) do
         (unitBackpack _unidad) addItemCargoGlobal [_visioNocturna,1];
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGN,1];
         (unitBackpack _unidad) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-        (unitBackpack _unidad) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",2];
+        (unitBackpack _unidad) addMagazineCargoGlobal [_municionMG,2];
 
         // Arma principal.
         _unidad addWeapon _armaMG;
@@ -930,7 +929,7 @@ switch (_tipoUnidad) do
         (unitBackpack _unidad) addItemCargoGlobal [_visioNocturna,1];
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGN,1];
         (unitBackpack _unidad) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-        (unitBackpack _unidad) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",2];
+        (unitBackpack _unidad) addMagazineCargoGlobal [_municionMG,2];
 
         // Arma principal.
         _unidad addWeapon _arma;
@@ -1207,7 +1206,7 @@ switch (_tipoUnidad) do
             (uniformContainer _unidad) addItemCargoGlobal [_epinefrina,1];
         };
         (uniformContainer _unidad) addItemCargoGlobal [_armaSilenciadorSN,1];
-        (uniformContainer _unidad) addMagazineCargoGlobal ["rhsusf_5Rnd_300winmag_xm2010",2];
+        (uniformContainer _unidad) addMagazineCargoGlobal [_municionSN,2];
         (uniformContainer _unidad) addMagazineCargoGlobal [_municionP,2];
 
         // Objetos en el chaleco.
@@ -1220,7 +1219,7 @@ switch (_tipoUnidad) do
             (vestContainer _unidad) addItemCargoGlobal [_herraMapa,1];
             (vestContainer _unidad) addItemCargoGlobal [_kestrel,1];
         };
-        (vestContainer _unidad) addMagazineCargoGlobal ["rhsusf_5Rnd_300winmag_xm2010",5];
+        (vestContainer _unidad) addMagazineCargoGlobal [_municionSN,5];
 
         // Objetos en la mochila.
         if (ust_mod_ace3) then {
@@ -1235,7 +1234,7 @@ switch (_tipoUnidad) do
         (unitBackpack _unidad) addItemCargoGlobal [_visioNocturna,1];
         (unitBackpack _unidad) addMagazineCargoGlobal ["rhs_mag_an_m8hc",1];
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGN,1];
-        (unitBackpack _unidad) addMagazineCargoGlobal ["rhsusf_5Rnd_300winmag_xm2010",5];
+        (unitBackpack _unidad) addMagazineCargoGlobal [_municionSN,5];
 
         // Arma principal.
         _unidad addWeapon _armaSN;
@@ -1337,7 +1336,7 @@ switch (_tipoUnidad) do
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGN,1];
         (unitBackpack _unidad) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGO,4];
-        (unitBackpack _unidad) addMagazineCargoGlobal ["30Rnd_556x45_Stanag",7];
+        (unitBackpack _unidad) addMagazineCargoGlobal [_municion,7];
         (unitBackpack _unidad) addMagazineCargoGlobal [_municionDIV,4];
 
         // Gafas.
@@ -1402,7 +1401,7 @@ switch (_tipoUnidad) do
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGN,1];
         (unitBackpack _unidad) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGO,1];
-        (unitBackpack _unidad) addMagazineCargoGlobal ["30Rnd_556x45_Stanag",3];
+        (unitBackpack _unidad) addMagazineCargoGlobal [_municion,3];
         (unitBackpack _unidad) addMagazineCargoGlobal [_municionDIV,3];
 
         // Gafas.
@@ -1452,7 +1451,7 @@ switch (_tipoUnidad) do
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGN,1];
         (unitBackpack _unidad) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGO,4];
-        (unitBackpack _unidad) addMagazineCargoGlobal ["30Rnd_556x45_Stanag",7];
+        (unitBackpack _unidad) addMagazineCargoGlobal [_municion,7];
         (unitBackpack _unidad) addMagazineCargoGlobal [_municionDIV,4];
 
         // Gafas.
@@ -1501,7 +1500,7 @@ switch (_tipoUnidad) do
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGN,1];
         (unitBackpack _unidad) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGO,4];
-        (unitBackpack _unidad) addMagazineCargoGlobal ["30Rnd_556x45_Stanag",5];
+        (unitBackpack _unidad) addMagazineCargoGlobal [_municion,5];
         (unitBackpack _unidad) addMagazineCargoGlobal [_municionDIV,4];
 
         // Gafas.
@@ -1583,10 +1582,10 @@ switch (_tipoUnidad) do
         _unidad addMagazineCargoGlobal ["rhs_fgm148_magazine_AT",2];
         _unidad addMagazineCargoGlobal [_municion,10];
         _unidad addMagazineCargoGlobal [_granadaRGO,5];
-        _unidad addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",5];
+        _unidad addMagazineCargoGlobal [_municionAR,5];
         _unidad addMagazineCargoGlobal ["SatchelCharge_Remote_Mag",2];
         _unidad addMagazineCargoGlobal [_municion320,8];
-        _unidad addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag",6];
+        _unidad addMagazineCargoGlobal [_municionDM,6];
         if (ust_mod_ace3) then {
             _unidad addItemCargoGlobal [_clacker,1];
             _unidad addItemCargoGlobal [_morfina,10];
@@ -1621,10 +1620,10 @@ switch (_tipoUnidad) do
         _unidad addMagazineCargoGlobal ["rhs_m136_hedp_mag",1];
         _unidad addMagazineCargoGlobal [_municion,15];
         _unidad addMagazineCargoGlobal [_granadaRGO,5];
-        _unidad addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",7];
+        _unidad addMagazineCargoGlobal [_municionAR,5];
         _unidad addMagazineCargoGlobal ["SatchelCharge_Remote_Mag",2];
         _unidad addMagazineCargoGlobal [_municion320,8];
-        _unidad addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag",10];
+        _unidad addMagazineCargoGlobal [_municionDM,10];
         if (ust_mod_ace3) then {
             _unidad addItemCargoGlobal [_clacker,1];
             _unidad addItemCargoGlobal [_morfina,10];
@@ -1655,7 +1654,7 @@ switch (_tipoUnidad) do
         _unidad addMagazineCargoGlobal [_granadaRGN,4];
         _unidad addMagazineCargoGlobal ["rhs_mag_an_m8hc",4];
         _unidad addMagazineCargoGlobal [_granadaRGO,10];
-        _unidad addMagazineCargoGlobal ["30Rnd_556x45_Stanag",10];
+        _unidad addMagazineCargoGlobal [_municion,10];
         _unidad addMagazineCargoGlobal [_municionDIV,15];
         _unidad addMagazineCargoGlobal ["SatchelCharge_Remote_Mag",2];
         if (ust_mod_ace3) then {
@@ -1669,9 +1668,7 @@ switch (_tipoUnidad) do
                 _unidad addItemCargoGlobal [_vendasRapidas,10];
                 _unidad addItemCargoGlobal [_vendasEmpaquetadas,10];
                 _unidad addItemCargoGlobal [_bolsaSalina500,5];
-
                 _unidad addItemCargoGlobal [_bolsaPlasma500,5];
-
                 _unidad addItemCargoGlobal [_kitQuirurgico,3];
                 _unidad addItemCargoGlobal [_kitPrimerosAuxilios,3];
             };
@@ -1693,9 +1690,9 @@ switch (_tipoUnidad) do
         if (ust_mod_ace3) then {
             (vestContainer _unidad) addItemCargoGlobal [_vendas,2];
         };
-        (vestContainer _unidad) addMagazineCargoGlobal [_municion,8];
-        (vestContainer _unidad) addMagazineCargoGlobal [_municionT,1];
-        (vestContainer _unidad) addMagazineCargoGlobal [_granadaRGO,4];
+        (vestContainer _unidad) addMagazineCargoGlobal [_municion,5];
+        (vestContainer _unidad) addMagazineCargoGlobal [_municionT,5];
+        (vestContainer _unidad) addMagazineCargoGlobal [_granadaRGO,3];
 
         // Objetos en la mochila.
         if (ust_mod_ace3) then {
@@ -1708,8 +1705,6 @@ switch (_tipoUnidad) do
             };
         };
         (unitBackpack _unidad) addItemCargoGlobal [_visioNocturna,1];
-        (unitBackpack _unidad) addMagazineCargoGlobal [_municion,5];
-        (unitBackpack _unidad) addMagazineCargoGlobal [_municionT,2];
         (unitBackpack _unidad) addMagazineCargoGlobal [_granadaRGN,2];
         (unitBackpack _unidad) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
 
