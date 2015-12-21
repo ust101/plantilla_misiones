@@ -2,6 +2,7 @@
 // Archivo: ust_configEquipacion_blu_f.sqf                                                               //
 // Autor: CC_Magnetar                                                                                    //
 // Adaptado por: [UST] Artur																			 //
+// Contribuidores: [UST] Fort																			 //
 // Versió: 1.0                                                                                           //
 // Creación del Documento: 2015/04/02                                                                    //
 // Descripción: Este documento sirve para equipar los jugadores con la equipación diseñada para la       //
@@ -27,11 +28,11 @@
 //                  ar                      Fusilero automatico (Automàtic Rifleman)                     //
 //                  dm                      Tirador designado (Designated Marksman)                      //
 //                  mg                      Ametrallador (Machine Gunner)                                //
-//                  amg                     Asistentee de ametrallador (Assitant Machine Gunner)          //
+//                  amg                     Asistente de ametrallador (Assitant Machine Gunner)          //
 //                  at                      Antitanque (Antitank)                                        //
 //                  aat                     Asistentee de antitanque (AT Ammo handler)                   //
 //                  aa                      Anti aéreo (Anti Air gunner)                                 //
-//                  aaa                     Asistentee de anti aéreo (Anti Air Assitant)                 //
+//                  aaa                     Asistente de anti aéreo (Anti Air Assitant)                  //
 //                  en                      Ingeniero (Engineer)                                         //
 //                  exp                     Explosivos (Explosives)                                      //
 //                  sn                      Francotirador (Sniper)                                       //
@@ -50,6 +51,7 @@
 //                                                                                                       //
 // Cambios: 0.1 (2015/04/02) Versión inicial.                                                            //
 //          1.0 (2015/11/26) Versión estable de la plantilla.                                            //
+//			1.1 (2015/12/21) Añadidos los uniformes de la UST y varias equipaciones adicionales			 //
 //=======================================================================================================//
 
 //=======================================================================================================//
@@ -92,7 +94,7 @@ _chalecoME = "GBR_wood_PlateCarrier1_rgr";
 _chalecoSAW = "GBR_wood_PlateCarrier1_rgr";
 _chalecoDIV = "V_RebreatherB";
 
-// Cascoos.
+// Cascos.
 _casco = "GBR_wood_HelmetB";
 _cascoCB = "GBR_wood_HelmetC";
 _cascoSG = "GBR_wood_HelmetA";
@@ -110,7 +112,7 @@ _mochilaDIV = "B_AssaultPack_blk";
 _paracaidasHPLT = "B_Parachute";
 _paracaidasJPLT = "B_Parachute";
 
-// Armes principals.
+// Armas principals.
 _arma = "RH_m4a1_ris";
 _arma320 = "RH_m4a1_ris_m203";
 _armaAR = "rhs_weap_m249_pip_L";
