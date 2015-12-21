@@ -117,17 +117,18 @@ _armaSN = "srifle_LRR_F";
 _armaDIV = "arifle_SDAR_F";
 
 // Silenciadores.
-_armaSilenciador = "rhsusf_acc_rotex5_grey";
+_armaSilenciador = "RH_qdss_nt4";
 _armaSurefire = "rhsusf_acc_SF3P556";
 _armaSilenciadorSN = "rhsusf_acc_M2010S";
 
 // Accesorios.
-_armaLaserLinterna = "rhsusf_acc_anpeq15";
-_armaLaserLinternaAR = "rhsusf_acc_anpeq15A";
+_armaLaserLinterna = "RH_SFM952V";
+_armaLaserLinternaAR = "RH_SFM952V";
 _armaLaserLinternaSN = "rhsusf_acc_anpeq15side";
 
 // Miras.
 _armaMira = "rhsusf_acc_ACOG";
+_armaMiraL = "rhsusf_acc_ACOG";
 _armaMiraAR = "rhsusf_acc_ELCAN";
 _armaMiraDM = "rhsusf_acc_LEUPOLDMK4";
 _armaMiraSN = "rhsusf_acc_LEUPOLDMK4_2";
@@ -293,7 +294,7 @@ switch (_tipoUnidad) do
         _unidad addWeapon _arma320;
         _unidad addPrimaryWeaponItem _armaSurefire;
         _unidad addPrimaryWeaponItem _armaLaserLinterna;
-        _unidad addPrimaryWeaponItem _armaMira;
+        _unidad addPrimaryWeaponItem _armaMiraL;
 
         // Objetos.
         //_unidad linkItem _gps;
@@ -346,7 +347,7 @@ switch (_tipoUnidad) do
         _unidad addWeapon _arma320;
         _unidad addPrimaryWeaponItem _armaSurefire;
         _unidad addPrimaryWeaponItem _armaLaserLinterna;
-        _unidad addPrimaryWeaponItem _armaMira;
+        _unidad addPrimaryWeaponItem _armaMiraL;
 
         // Binóculos.
         _unidad addWeapon _vectorIV;
@@ -544,7 +545,7 @@ switch (_tipoUnidad) do
         _unidad addWeapon _arma320;
         _unidad addPrimaryWeaponItem _armaSurefire;
         _unidad addPrimaryWeaponItem _armaLaserLinterna;
-        _unidad addPrimaryWeaponItem _armaMira;
+        _unidad addPrimaryWeaponItem _armaMiraL;
 
         // Objetos.
         //_unidad linkItem _gps;
@@ -594,7 +595,7 @@ switch (_tipoUnidad) do
         _unidad addWeapon _arma320;
         _unidad addPrimaryWeaponItem _armaSurefire;
         _unidad addPrimaryWeaponItem _armaLaserLinterna;
-        _unidad addPrimaryWeaponItem _armaMira;
+        _unidad addPrimaryWeaponItem _armaMiraL;
 
         // Binóculos.
         _unidad addWeapon _vectorIV;
