@@ -1,0 +1,81 @@
+//=======================================================================================================
+// Archivo: Description.ext                                                                              
+// Autor: CC_Magnetar                                                                                    
+// Adaptado por: [UST] Artur																			 
+// Versión: 1.0                                                                                           
+// Creación del Documento: 2015/02/22                                                                      
+// Descripción: El fichero description.ext sirve para configurar la misión. En este caso es un fichero
+//              totalmente modular, donde las variables que dependen de cada missión (respawn, autores,...)
+//              estan definidas en un fichero a parte, así como las funciones y los permisos que éstas tienen.    
+// Cambios: 0.1 (2015/02/22) Versión inicial.                                                              
+//          1.0 (2015/11/26) Versión estable de la plantilla.                                              
+//=======================================================================================================
+
+//=======================================================================================================
+// CONFIGURACIÓN DE LA MISIÓN: Estos parámetros deben ser moficiadas por el creador de la misión.         
+//=======================================================================================================
+#include "configMision\ust_configMision.hpp"
+
+//=======================================================================================================
+// CONFIGURACIÓN DE ADDONS: Este fichero debe ser modificado por el creador de la misión y permite 
+//                          configurar qué addons se muestran en la pantalla de parámetros par que se
+//                          puedan configurar.                                                   
+//=======================================================================================================
+class CfgComponentes {
+    #define UST_COMPONENTES
+        #include "ust_componentes.hpp"
+    #undef UST_COMPONENTES
+};
+
+//=======================================================================================================
+// DEBRIEFING: Información para cuando acaba la misión.                                                      
+//=======================================================================================================
+#include "configMision\ust_debriefingMision.hpp"
+
+//=======================================================================================================
+// PARAMETROS DE LA MISIÓN: RETOQUES PARA EL ADMINISTRADOR                                                   
+//=======================================================================================================
+class Params {
+    //===================================================================================================
+    // Debug: Variable para controlar Debug.                                                              
+    // Opción por defecto: Habilitado                                                                      
+    //===================================================================================================
+    class ust_param_debugOutput {
+        title = "Mode Debug";
+        values[] = {0,1};
+        texts[] = {"Desactivado","Activado"};
+        default = 1;
+    };
+
+    #define UST_PARAMETROS
+        #include "ust_componentes.hpp"
+    #undef UST_PARAMETROS
+};
+
+//=======================================================================================================
+// FUNCIONES: Funciones para las misiones de la UST.                                           
+//=======================================================================================================
+class CfgFunctions {
+    class UST {
+        #define UST_FUNCIONES
+            #include "ust_componentes.hpp"
+        #undef UST_FUNCIONES
+    };
+};
+
+//=======================================================================================================
+// RESTRICCIONES EN LA EJECUCIÓN DE FUNCIONES: Restringe el alcance de las funciones.                           
+//=======================================================================================================
+class CfgRemoteExec {
+    // Lista de funciones que pueden ser enviadas por el cliente a través de remoteExec/remoteExecCall
+    class Functions {
+        mode = 2;  // Estado de remoteExec: 0: deshabilitado, 1: habilitado con whitelist, 2: habilitado (por defecto).
+        jip = 1;   // Posibilidad de enviar mensajes JIP. 0: deshabilitado, 1: habilitado.
+
+        #define UST_REMOTEEXEC_FUNCIONES
+            #include "ust_componentes.hpp"
+        #undef UST_REMOTEEXEC_FUNCIONES
+    };
+};
+
+//=========================================== FIN DEL FICHERO ===========================================//
