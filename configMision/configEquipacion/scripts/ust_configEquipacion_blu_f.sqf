@@ -224,7 +224,7 @@ _terminalUAV = "B_UavTerminal";
 _prismaticos = "lerca_1200_tan";
 
 // Visión nocturna.
-_visioNocturna = "rhsusf_ANPVS_14";
+_visioNocturna = "ffaa_nvgoggles";
 if (ust_mod_ace3) then {
 
     //===================================================================================================//
