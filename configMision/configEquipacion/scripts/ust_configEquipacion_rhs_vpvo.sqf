@@ -99,7 +99,7 @@ _esInfanteria = _unidad isKindOf "CAManBase";
 // Resumen de equipación: Armas, munición, accessorios, gafas, chalecos, ...                             //
 //=======================================================================================================//
 
-// Uniformes  
+// Uniformes
 _uniforme = "rhs_uniform_cu_ucp";
 _uniformeSN = "U_B_GhillieSuit";
 _uniformeDIV = "U_B_Wetsuit";
@@ -134,6 +134,39 @@ _armaDM = "rhs_weap_m14ebrri";
 _armaSN = "rhs_weap_XM2010_sa";
 _armaDIV = "arifle_SDAR_F";
 
+// Municiones
+_municion = "30Rnd_556x45_Stanag";
+_municionT = "30Rnd_556x45_Stanag_Tracer_Red";
+_municionAR = "rhsusf_200Rnd_556x45_soft_pouch";
+_municionMG = "rhsusf_100Rnd_762x51";
+_municionDM = "RH_20Rnd_762x51_M80A1";
+_municionSN = "rhsusf_5Rnd_300winmag_xm2010";
+_municionDIV = "20Rnd_556x45_UW_mag";
+_municionP = "rhsusf_mag_7x45acp_MHP";
+
+// M320
+_municion320 = "1Rnd_HE_Grenade_shell";
+_municion320HB = "1Rnd_Smoke_Grenade_shell";
+_municion320HV = "1Rnd_SmokeGreen_Grenade_shell";
+_municion320HR = "1Rnd_SmokeRed_Grenade_shell";
+_municion320FB = "UGL_FlareWhite_F";
+_municion320FV = "UGL_FlareGreen_F";
+_municion320FR = "UGL_FlareRed_F";
+
+// Granadas
+_granadaRGO = "HandGrenade";
+_granadaRGN = "MiniGrenade";
+_granadaHB = "SmokeShell";
+_granadaHV = "SmokeShellGreen";
+_granadaHR = "SmokeShellRed";
+_granadaLV = "Chemlight_green";
+_granadaLR = "Chemlight_red";
+_granadaBB = "ACE_HandFlare_White";
+_granadaBV = "ACE_HandFlare_Green";
+_granadaBR = "ACE_HandFlare_Red";
+_granadaIR = "B_IR_Grenade";
+_granadaS = "ACE_M84";
+
 // Silenciadores.
 _armaSilenciador = "rhsusf_acc_rotex5_grey";
 _armaSurefire = "rhsusf_acc_SF3P556";
@@ -145,8 +178,9 @@ _armaLaserLinternaAR = "rhsusf_acc_anpeq15A";
 _armaLaserLinternaSN = "rhsusf_acc_anpeq15side";
 
 // Miras.
-_armaMira = "rhsusf_acc_ACOG";
-_armaMiraAR = "rhsusf_acc_ELCAN";
+_armaMira = "RH_compm4s";
+_armaMiraL = "rhsusf_acc_ACOG";
+_armaMiraAR = "RH_c79";
 _armaMiraDM = "rhsusf_acc_LEUPOLDMK4";
 _armaMiraSN = "rhsusf_acc_LEUPOLDMK4_2";
 
